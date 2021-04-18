@@ -1,11 +1,18 @@
 <style>
-    .container-1{
-        display: flex;
-        flex-direction: row;
-        /* align-items: flex-end ,flex-start,center;  */
+    @media(min-width: 768px){
+         .container-1{
+            display: flex;
+            flex-direction: row;
+            /* align-items: flex-end ,flex-start,center;  */
+        }
+        .container-2{
+            justify-content: space-around;
+            display: flex;
+        }
     }
+   
 
-    .container-1 div, .container-2 div{
+    .container-1 div, .container-2 div, .container-3 div{
         border: 1px #ccc solid;
         padding: 10px;
     }
@@ -21,13 +28,21 @@
         flex: 1;
         order: 3;
     }
-    .container-2{
-        justify-content: space-around;
-        display: flex;
-    }
+    
     .container-2-box{
-        width: 27%;
+        flex-basis: 27%;
     }
+
+    .container-3{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .container-3-box{
+        flex-basis: 12%;
+    }
+
 </style>
 
 <html>
@@ -48,18 +63,44 @@
             </div>
             <div class="container-2">
                 <div class="container-2-box">
-                    <h3>Box One</h3>
+                    <h3>Box Four</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                 </div>
                 <div class="container-2-box">
-                    <h3>Box Two</h3>
+                    <h3>Box Five</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                 </div>
                 <div class="container-2-box">
-                    <h3>Box Three</h3>
+                    <h3>Box Six</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                 </div>
+            </div>
+            <div class="container-3">
+                <div class="container-3-box">
+                    <h3>Box Seven</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe eligendi qui exercitationem et numquam quo deserunt omnis officiis velit obcaecati nemo minus sed, nobis optio eveniet eius nihil, blanditiis quos? Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                 </div>
+                <div class="container-3-box">
+                    <h3>Box Eight</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo, voluptatem, ullam vel sit a cum ab unde minus quod nobis exercitationem ipsam suscipit blanditiis quae nam. Suscipit doloremque iusto vitae.</p>
+                </div>
+                <div class="container-3-box">
+                    <h3>Box Nine</h3>
+                    <p>Lorem ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae accusamus dicta repellat ab pariatur odit, eum aspernatur id laudantium iusto esse cupiditate nisi, recusandae dignissimos eius modi est velit dolore! dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+                <div class="container-3-box">
+                    <h3>Box Ten</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe eligendi qui exercitationem et numquam quo deserunt omnis officiis velit obcaecati nemo minus sed, nobis optio eveniet eius nihil, blanditiis quos? Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+                <div class="container-3-box">
+                    <h3>Box Eleven</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo, voluptatem, ullam vel sit a cum ab unde minus quod nobis exercitationem ipsam suscipit blanditiis quae nam. Suscipit doloremque iusto vitae.</p>
+                </div>
+                <div class="container-3-box">
+                    <h3>Box Twelve</h3>
+                    <p>Lorem ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae accusamus dicta repellat ab pariatur odit, eum aspernatur id laudantium iusto esse cupiditate nisi, recusandae dignissimos eius modi est velit dolore! dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+            </div>
     </body>
 </html>
 
